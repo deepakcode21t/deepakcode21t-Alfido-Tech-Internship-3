@@ -1,54 +1,40 @@
-# Alfido Tech Task 3 - Authentication & Protected Routes (JWT)
+# Alfido-Tech-Internship
 
-This project demonstrates signup/login, bcrypt password hashing, JWT verification, HTTP-only cookie token storage, protected API routes, React protected routes, and logout.
+**Name:** Deepak Thapa  
+**Company:** Alfido Tech  
+**Domain:** MERN Stack Developer  
+**Task:** Task 3 – Authentication & Protected Routes  
 
-## Run backend
-```bash
-cd server
-npm install
-```
-Create `.env` from `.env.example`:
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/alfido_task3
-JWT_SECRET=change_this_to_a_long_random_secret
-CLIENT_URL=http://localhost:5173
-```
-Then:
-```bash
-npm run dev
-```
-Expected: `MongoDB connected` and `Server running at http://localhost:5000`.
+## 1. Introduction
 
-## Run frontend
-Open a second terminal:
-```bash
-cd client
-npm install
-npm run dev
-```
-Open the Vite URL, normally `http://localhost:5173`.
+This task focused on implementing **user authentication and protected routes** in a MERN application. The system provides secure signup and login functionality using password hashing and JWT-based authentication.
 
-## Test
-1. Sign up.
-2. You are taken to the protected Dashboard.
-3. Dashboard calls `/api/auth/me` and `/api/protected`.
-4. Logout.
-5. Try `/dashboard`; you should be redirected to Login.
+## 2. Objectives
 
-## API
-- POST `/api/auth/register`
-- POST `/api/auth/login`
-- GET `/api/auth/me`
-- POST `/api/auth/logout`
-- GET `/api/protected`
+- Implement user signup and login.
+- Hash passwords securely using bcrypt.
+- Generate and verify JWT tokens.
+- Create protected API and client routes.
+- Implement secure token storage using HTTP-only cookies.
+- Provide logout functionality.
 
-## Security notes
-Passwords are stored only as bcrypt hashes. JWT is kept in an HTTP-only cookie. Never commit `.env` or real secrets. Use HTTPS and CSRF protection in production.
+## 3. Task Completed
 
-## Suggested screenshots
-1. Signup page / successful registration
-2. Login page / successful login
-3. Protected Dashboard
-4. MongoDB Compass user document showing a bcrypt hash (no real secrets)
-5. VS Code project structure
+**Task 3: Authentication & Protected Routes (JWT)**
+
+Implemented:
+
+- **Signup** – Create new user accounts
+- **Login** – Authenticate registered users
+- **bcrypt** – Secure password hashing
+- **JWT** – Token-based authentication
+- **Protected Routes** – Restrict access to authenticated users
+- **Logout** – Clear authentication session
+
+## 4. Tools & Technologies
+
+**React.js | Node.js | Express.js | MongoDB | Mongoose | bcrypt | JWT | React Router | VS Code | Git & GitHub**
+
+## 5. Learning Outcome
+
+Gained practical knowledge of **authentication, password security, JWT, protected routes, HTTP-only cookies, MongoDB user management, and secure frontend-backend communication**.
